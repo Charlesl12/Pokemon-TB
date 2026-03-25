@@ -1,2 +1,2 @@
-# Pok-mon-Team-Builder
+# Pokemon Team Builder
 TA
