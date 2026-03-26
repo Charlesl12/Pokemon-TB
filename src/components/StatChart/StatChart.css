@@ -1,0 +1,163 @@
+.radar-section {
+    width: 100%;
+}
+
+.radar-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    color: #111827;
+}
+
+.radar-empty {
+    text-align: center;
+    color: #9ca3af;
+    padding: 40px;
+    border: 2px dashed #e5e7eb;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.radar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .radar-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.radar-panel {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.panel-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    color: #111827;
+}
+
+/* Role rows */
+.role-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.role-row {
+    display: grid;
+    grid-template-columns: 10px 1fr 120px 20px;
+    align-items: center;
+    gap: 8px;
+}
+
+.role-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.role-name {
+    font-size: 12px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.role-bar-track {
+    background: #f3f4f6;
+    border-radius: 999px;
+    height: 6px;
+    overflow: hidden;
+}
+
+.role-bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.4s ease;
+}
+
+.role-count {
+    font-size: 12px;
+    font-weight: 700;
+    color: #374151;
+    text-align: right;
+}
+
+/* Per-pokemon roles */
+.pokemon-roles {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.pokemon-role-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pokemon-role-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+    min-width: 80px;
+    text-transform: capitalize;
+}
+
+.pokemon-role-tags {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.role-tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+}
+
+/* Speed tiers */
+.speed-section {
+    border-top: 1px solid #f3f4f6;
+    padding-top: 16px;
+}
+
+.speed-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #374151;
+    margin: 0 0 10px;
+}
+
+.speed-tiers {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.speed-tier {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.speed-tier-label {
+    font-weight: 600;
+}
+
+.speed-tier-names {
+    color: #6b7280;
+}

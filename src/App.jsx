@@ -1,5 +1,8 @@
 import SearchBar from './components/SearchBar/SearchBar';
 import TeamSlots from './components/TeamSlots/TeamSlots';
+import TypeCoverageChart from "./components/TypeCoverageChart/TypeCoverageChart.jsx";
+import StatChart from './components/StatChart/StatChart';
+import Recommendation from './components/Recommendation/Recommendation';
 import './App.css';
 
 export default function App() {
@@ -14,7 +17,10 @@ export default function App() {
           <div className="search-section">
             <SearchBar />
           </div>
-          <TeamSlots />
+            <TeamSlots />
+            <TypeCoverageChart />
+            <StatChart />
+            <Recommendation />
         </main>
       </div>
   );

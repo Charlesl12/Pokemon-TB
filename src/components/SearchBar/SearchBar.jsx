@@ -21,7 +21,7 @@ export default function SearchBar() {
             .filter(name => name.includes(query.toLowerCase()))
             .slice(0, 8);
     }, [query, list]);
-    
+
     useEffect(() => {
         function handleClickOutside(e) {
             if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
