@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { TeamProvider} from "./context/TeamContext.js";
+import { TeamProvider} from "./context/TeamContext.jsx";
 import './index.css'
 import App from './App.jsx'
 
